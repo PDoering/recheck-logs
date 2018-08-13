@@ -23,13 +23,15 @@ import de.retest.ui.descriptors.SuffixAttribute;
 public class LogFileParser {
 
 	public static final String CONFIGURED_PATTERN_CONFIG_KEY = "de.retest.recheck.logs.pattern";
-	public static final String PATTERN_DEFAULT = "(?<dateTime>[-:\\d ]+) (?<level>[\\w]+) \\[(?<thread>.+)\\] (?<logger>[\\w\\.]+) - (?<message>.*)";
+	public static final String LOGBACK_DEFAULT_PATTERN = "(?<dateTime>[-:\\d ]+) (?<level>[\\w]+) \\[(?<thread>.+)\\] (?<logger>[\\w\\.]+) - (?<message>.*)";
+	public static final String LOG4J_DEFAULT_PATTERN = "(?<message>.*)";
+	public static final String LOG4J_TTCC_CONVERSION_PATTERN = "(?<millis>[\\d]+) \\[(?<thread>.+)\\] (?<level>[\\w]+) (?<category>.+) (?<nestedDiagnosticContext>.+) - (?<message>.*)";
 
 	private static final String LOG_FILE_TYPE = "log-file";
 
 	public RootElement parseLogFile(File logFile) {
 		List<Element> lines = new ArrayList<>();
-		LogLineParser lineParser = new LogLineParser(System.getProperty(CONFIGURED_PATTERN_CONFIG_KEY, PATTERN_DEFAULT));
+		LogLineParser lineParser = new LogLineParser(System.getProperty(CONFIGURED_PATTERN_CONFIG_KEY, LOGBACK_DEFAULT_PATTERN));
 		Path root = Path.fromString(LOG_FILE_TYPE);
 		StringBuffer current = new StringBuffer();
 		try (BufferedReader br = new BufferedReader(new FileReader(logFile))) {
