@@ -1,0 +1,59 @@
+2018-08-13 21:51:20 INFO [main] de.retest.configuration.SystemPropertyHandler - Loading configuration from '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/retest.properties'.
+ 2018-08-13 21:51:20 INFO [main] de.retest.configuration.RetestWorkspace - Initialize ReTestWorkspace with encountered userConfigFile '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/retest.properties'.
+ 2018-08-13 21:51:20 INFO [main] de.retest.util.MainUtil - retest rocks!
+ 2018-08-13 21:51:20 INFO [main] de.retest.util.MainUtil - Launching retest version 2.3.0.
+ 2018-08-13 21:51:20 INFO [main] de.retest.util.MainUtil - Writing log file to '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest/../retest-workspace/logs/retest.log'.
+ 2018-08-13 21:51:20 INFO [main] de.retest.license.LicenseManager - ReTest license number -1 licensed to Demo with customer ID -1, 140 days left.
+ 2018-08-13 21:51:20 INFO [main] de.retest.license.LicenseManager - ReTest license number -1 licensed to Demo with customer ID -1, 140 days left.
+ 2018-08-13 21:51:20 ERROR [retest-check-internet-connection] de.retest.internet.HttpRequest - Exception checking locality of URL 'retest.de'.
+ java.net.UnknownHostException: retest.de: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_92]
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928) ~[na:1.8.0_92]
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323) ~[na:1.8.0_92]
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276) ~[na:1.8.0_92]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192) ~[na:1.8.0_92]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126) ~[na:1.8.0_92]
+	at java.net.InetAddress.getByName(InetAddress.java:1076) ~[na:1.8.0_92]
+	at de.retest.internet.HttpRequest.a(SourceFile:68) ~[retest.jar:2.3.0]
+	at de.retest.internet.ReTestConnection.a(SourceFile:55) [retest.jar:2.3.0]
+	at de.retest.internet.ReTestConnection.a(SourceFile:47) [retest.jar:2.3.0]
+	at de.retest.internet.ReTestConnection.a(SourceFile:22) [retest.jar:2.3.0]
+	at de.retest.gui.helper.ReTestErrorHandler$1.run(SourceFile:38) [retest.jar:2.3.0]
+2018-08-13 21:51:20 INFO [AWT-EventQueue-0] de.retest.SuriliConfig - Target class is 'info.retest.swing.demo.MainFrame' and target class prefix is 'info.retest'.
+ 2018-08-13 21:51:20 INFO [AWT-EventQueue-0] de.retest.Properties - SUT execution directory set by default ('/Users/roessler/Desktop/retest/retest-demo-2.3.0/system-under-test').
+ 2018-08-13 21:51:20 INFO [AWT-EventQueue-0] de.retest.ExecutingTestContextUtil - Loading test context 'de.retest.swing.ReCaptureTestContextImpl'.
+ 2018-08-13 21:51:20 ERROR [retest-check-internet-connection] de.retest.internet.ReTestConnection - Could not connect to the Internet! Received following response: RequestResult [responseCode=-1, stream=org.apache.commons.io.input.AutoCloseInputStream@2b3c3f0d, error=java.net.UnknownHostException: retest.de]
+ java.net.UnknownHostException: retest.de
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[na:1.8.0_92]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_92]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_92]
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668) ~[na:1.8.0_92]
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173) ~[na:1.8.0_92]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[na:1.8.0_92]
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[na:1.8.0_92]
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367) ~[na:1.8.0_92]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1148) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999) ~[na:1.8.0_92]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441) ~[na:1.8.0_92]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_92]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338) ~[na:1.8.0_92]
+	at de.retest.internet.HttpGetRequest.a(SourceFile:25) ~[retest.jar:2.3.0]
+	at de.retest.internet.ReTestConnection.b(SourceFile:61) ~[retest.jar:2.3.0]
+	at de.retest.internet.ReTestConnection.c(SourceFile:79) ~[retest.jar:2.3.0]
+	at de.retest.internet.ReTestConnection.a(SourceFile:55) ~[retest.jar:2.3.0]
+	at de.retest.internet.ReTestConnection.a(SourceFile:47) ~[retest.jar:2.3.0]
+	at de.retest.internet.ReTestConnection.a(SourceFile:22) ~[retest.jar:2.3.0]
+	at de.retest.gui.helper.ReTestErrorHandler$1.run(SourceFile:38) [retest.jar:2.3.0]
+2018-08-13 21:51:21 INFO [AWT-EventQueue-0] de.retest.elementcollection.IgnoredComponents - No file '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/ignored.components' with ignored components found, be aware we are looking relative to the work directory.
+ 2018-08-13 21:51:21 INFO [AWT-EventQueue-0] de.retest.remote.ControllerReceiver - Starting AgentToController service.
+ 2018-08-13 21:51:21 INFO [AWT-EventQueue-0] de.retest.remote.RemoteUtil - Serving service stub at port: 45678
+ 2018-08-13 21:51:22 INFO [Thread-2] de.retest.util.FileUtil - Creating actions-folder: /Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/recorded.
+ 2018-08-13 21:51:22 INFO [Thread-2] de.retest.util.FileUtil - Creating tests-folder: /Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/tests.
+ 2018-08-13 21:51:22 INFO [Thread-2] de.retest.util.FileUtil - Creating suite-folder: /Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/suites.
+ 2018-08-13 21:51:25 INFO [AWT-EventQueue-0] de.retest.gui.MainModel - MainModel shutdown.
+ 

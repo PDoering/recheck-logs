@@ -1,0 +1,92 @@
+2018-08-09 14:32:19 INFO [main] de.retest.configuration.SystemPropertyHandler - Loading configuration from '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/retest.properties'.
+ 2018-08-09 14:32:19 INFO [main] de.retest.configuration.RetestWorkspace - Initialize ReTestWorkspace with encountered userConfigFile '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/retest.properties'.
+ 2018-08-09 14:32:19 INFO [main] de.retest.util.MainUtil - retest rocks!
+ 2018-08-09 14:32:19 INFO [main] de.retest.util.MainUtil - Launching retest version 2.3.0.
+ 2018-08-09 14:32:19 INFO [main] de.retest.util.MainUtil - Writing log file to '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest/../retest-workspace/logs/retest.log'.
+ 2018-08-09 14:32:20 INFO [main] de.retest.license.LicenseManager - ReTest license number -1 licensed to Demo with customer ID -1, 144 days left.
+ 2018-08-09 14:32:20 INFO [main] de.retest.license.LicenseManager - ReTest license number -1 licensed to Demo with customer ID -1, 144 days left.
+ 2018-08-09 14:32:20 INFO [AWT-EventQueue-0] de.retest.SuriliConfig - Target class is 'info.retest.swing.demo.MainFrame' and target class prefix is 'info.retest'.
+ 2018-08-09 14:32:20 INFO [AWT-EventQueue-0] de.retest.Properties - SUT execution directory set by default ('/Users/roessler/Desktop/retest/retest-demo-2.3.0/system-under-test').
+ 2018-08-09 14:32:20 INFO [AWT-EventQueue-0] de.retest.ExecutingTestContextUtil - Loading test context 'de.retest.swing.ReCaptureTestContextImpl'.
+ 2018-08-09 14:32:20 INFO [retest-check-internet-connection] de.retest.internet.ReTestConnection - Working Internet connection: RequestResult [responseCode=200, stream=org.apache.commons.io.input.AutoCloseInputStream@7693a233, error=null]
+ 2018-08-09 14:32:20 INFO [AWT-EventQueue-0] de.retest.elementcollection.IgnoredComponents - No file '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/ignored.components' with ignored components found, be aware we are looking relative to the work directory.
+ 2018-08-09 14:32:20 INFO [AWT-EventQueue-0] de.retest.remote.ControllerReceiver - Starting AgentToController service.
+ 2018-08-09 14:32:21 INFO [AWT-EventQueue-0] de.retest.remote.RemoteUtil - Serving service stub at port: 45678
+ 2018-08-09 14:32:22 INFO [Thread-2] de.retest.util.FileUtil - Creating actions-folder: /Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/recorded.
+ 2018-08-09 14:32:22 INFO [Thread-2] de.retest.util.FileUtil - Creating tests-folder: /Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/tests.
+ 2018-08-09 14:32:22 INFO [Thread-2] de.retest.util.FileUtil - Creating suite-folder: /Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/suites.
+ 2018-08-09 14:32:27 INFO [AWT-EventQueue-0] de.retest.gui.review.ReViewOverviewModel - Loading result.replay 'testreports'.
+ 2018-08-09 14:32:32 INFO [AWT-EventQueue-0] de.retest.gui.review.ReViewOverviewModel - Loading result.replay '/Users/roessler/Documents/startup/workspace/recheck-xml/target/test-classes/retest/recheck/de.retest.recheck.xml.RecheckXmlTest.replay'.
+ 2018-08-09 14:33:46 INFO [pool-8-thread-1] de.retest.report.LoadReportFromInputFlow - Now loading the testreport from file file:/Users/roessler/Documents/startup/workspace/recheck-xml/target/test-classes/retest/recheck/de.retest.recheck.xml.RecheckXmlTest.replay.
+ 2018-08-09 14:33:46 INFO [AWT-EventQueue-0] de.retest.gui.review.ReViewOverviewModel - Finished loading of result.replay.
+ 2018-08-09 14:33:46 ERROR [AWT-EventQueue-0] de.retest.swing.UncaughtExceptionHandlerCrashDetector - Uncaught exception in thread Thread[AWT-EventQueue-0,6,main]: 
+ java.lang.NullPointerException: null
+	at de.retest.ui.diff.ElementDifference.b(SourceFile:136) ~[retest.jar:2.3.0]
+	at de.retest.ui.diff.RootElementDifference.b(SourceFile:108) ~[retest.jar:2.3.0]
+	at de.retest.ui.diff.ElementDifferenceFinder.a(SourceFile:140) ~[retest.jar:2.3.0]
+	at de.retest.ui.diff.StateDifference.b(SourceFile:76) ~[retest.jar:2.3.0]
+	at de.retest.report.ActionReplayResult.h(SourceFile:235) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.GlobalChangeSetApplier.b(SourceFile:48) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.GlobalChangeSetApplier.<init>(SourceFile:31) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.GlobalChangeSetApplier.a(SourceFile:35) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.ReViewOverviewModel.b(SourceFile:140) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.ReViewOverviewModel.a(SourceFile:135) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.ReViewOverviewModel$AbstractReportCallback.a(SourceFile:235) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.workers.LoadReportResultWorker.done(SourceFile:46) ~[retest.jar:2.3.0]
+	at javax.swing.SwingWorker$5.run(SwingWorker.java:737) ~[na:1.8.0_92]
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:832) ~[na:1.8.0_92]
+	at sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112) ~[na:1.8.0_92]
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:842) ~[na:1.8.0_92]
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313) ~[na:1.8.0_92]
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245) ~[na:1.8.0_92]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311) ~[na:1.8.0_92]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756) ~[na:1.8.0_92]
+	at java.awt.EventQueue.access$500(EventQueue.java:97) ~[na:1.8.0_92]
+	at java.awt.EventQueue$3.run(EventQueue.java:709) ~[na:1.8.0_92]
+	at java.awt.EventQueue$3.run(EventQueue.java:703) ~[na:1.8.0_92]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_92]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76) ~[na:1.8.0_92]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726) ~[na:1.8.0_92]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201) [na:1.8.0_92]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116) [na:1.8.0_92]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105) [na:1.8.0_92]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [na:1.8.0_92]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93) [na:1.8.0_92]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82) [na:1.8.0_92]
+2018-08-09 14:33:46 ERROR [AWT-EventQueue-0] de.retest.gui.helper.ReTestErrorHandler - Uncaugt exception in thread Thread[AWT-EventQueue-0,6,main]
+ java.lang.NullPointerException: null
+	at de.retest.ui.diff.ElementDifference.b(SourceFile:136) ~[retest.jar:2.3.0]
+	at de.retest.ui.diff.RootElementDifference.b(SourceFile:108) ~[retest.jar:2.3.0]
+	at de.retest.ui.diff.ElementDifferenceFinder.a(SourceFile:140) ~[retest.jar:2.3.0]
+	at de.retest.ui.diff.StateDifference.b(SourceFile:76) ~[retest.jar:2.3.0]
+	at de.retest.report.ActionReplayResult.h(SourceFile:235) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.GlobalChangeSetApplier.b(SourceFile:48) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.GlobalChangeSetApplier.<init>(SourceFile:31) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.GlobalChangeSetApplier.a(SourceFile:35) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.ReViewOverviewModel.b(SourceFile:140) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.ReViewOverviewModel.a(SourceFile:135) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.ReViewOverviewModel$AbstractReportCallback.a(SourceFile:235) ~[retest.jar:2.3.0]
+	at de.retest.gui.review.workers.LoadReportResultWorker.done(SourceFile:46) ~[retest.jar:2.3.0]
+	at javax.swing.SwingWorker$5.run(SwingWorker.java:737) ~[na:1.8.0_92]
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:832) ~[na:1.8.0_92]
+	at sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112) ~[na:1.8.0_92]
+	at javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:842) ~[na:1.8.0_92]
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313) ~[na:1.8.0_92]
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245) ~[na:1.8.0_92]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311) ~[na:1.8.0_92]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756) ~[na:1.8.0_92]
+	at java.awt.EventQueue.access$500(EventQueue.java:97) ~[na:1.8.0_92]
+	at java.awt.EventQueue$3.run(EventQueue.java:709) ~[na:1.8.0_92]
+	at java.awt.EventQueue$3.run(EventQueue.java:703) ~[na:1.8.0_92]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_92]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76) ~[na:1.8.0_92]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726) ~[na:1.8.0_92]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201) [na:1.8.0_92]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116) [na:1.8.0_92]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105) [na:1.8.0_92]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [na:1.8.0_92]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93) [na:1.8.0_92]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82) [na:1.8.0_92]
+2018-08-09 14:33:47 INFO [AWT-EventQueue-0] de.retest.util.BugSubmitter - Successfully submitted bug report to https://bugs.retest.org/.
+ 2018-08-09 14:34:09 INFO [AWT-EventQueue-0] de.retest.gui.MainModel - MainModel shutdown.
+ 
