@@ -15,7 +15,7 @@ public class LogFileAdapterTest {
 	@Test
 	public void should_be_able_to_parse_logfile() {
 		RootElement root = new LogFileAdapter().convert(new File(resources, "logback-default-layout.log")).iterator().next();
-		assertThat(root.countAllContainedElements()).isEqualTo(34);
+		assertThat(root.getContainedElements().size()).isEqualTo(19);
 	}
 
 }
