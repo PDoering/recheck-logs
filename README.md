@@ -43,23 +43,6 @@ Currently available as a Java API with support for JUnit 4.
 Add any logging facility you want, that is compatible with [SLF4j](https://www.slf4j.org/).
 
 
-## Building
-
-To build this project locally, you have to skip JAR signing.
-
-For normal builds use:
-
-```
-mvn deploy -Dgpg.skip=true
-```
-
-For making releases use:
-
-```
-mvn release:prepare -Darguments="-Dgpg.skip=true"
-```
-
-
 ## License
 
 This project is licensed under the [AGPL license](LICENSE).
