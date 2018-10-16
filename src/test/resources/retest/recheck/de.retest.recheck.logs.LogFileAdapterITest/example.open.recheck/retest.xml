@@ -1145,7 +1145,7 @@
 						<attributes>
 							<entry>
 								<key>text</key>
-								<value xsi:type="xsd:string">No file '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/ignored.components' with ignored components found, be aware we are looking relative to the work directory.</value>
+								<value xsi:type="xsd:string">No file '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/recheck.ignore' with ignored components found, be aware we are looking relative to the work directory.</value>
 							</entry>
 						</attributes>
 					</attributes>
