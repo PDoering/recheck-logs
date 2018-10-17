@@ -1,6 +1,7 @@
 package de.retest.recheck.logs;
 
 import static de.retest.recheck.logs.LogLineParser.LINE_TYPE;
+import static de.retest.ui.descriptors.RetestIdProviderUtil.getRetestId;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -68,7 +69,7 @@ public class LogFileParser {
 		attributes.add(new StringAttribute("type", LOG_FILE_TYPE));
 		attributes.add(new StringAttribute("fileName", logFile.getName()));
 		IdentifyingAttributes identifyingAttributes = new IdentifyingAttributes(attributes);
-		return new RootElement(identifyingAttributes, new MutableAttributes().immutable(), null, lines, "", 0, logFile.getName());
+		return new RootElement(getRetestId(identifyingAttributes), identifyingAttributes, new MutableAttributes().immutable(), null, lines, "", 0, logFile.getName());
 	}
 
 }

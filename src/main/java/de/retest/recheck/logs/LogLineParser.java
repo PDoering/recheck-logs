@@ -1,5 +1,7 @@
 package de.retest.recheck.logs;
 
+import static de.retest.ui.descriptors.RetestIdProviderUtil.getRetestId;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -74,7 +76,8 @@ public class LogLineParser {
 		identAttributes.add(new StringAttribute("type", groupName));
 		MutableAttributes attributes = new MutableAttributes();
 		attributes.put("text", group);
-		return new Element(new IdentifyingAttributes(identAttributes), attributes.immutable());
+		IdentifyingAttributes identifyingAttributes = new IdentifyingAttributes(identAttributes);
+		return new Element(getRetestId(identifyingAttributes), identifyingAttributes, attributes.immutable());
 	}
 
 	private Element createElement(Path path, List<Element> parts, int lineCounter) {
@@ -83,6 +86,6 @@ public class LogLineParser {
 		attributes.add(new SuffixAttribute(Integer.toString(lineCounter)));
 		attributes.add(new StringAttribute("type", LINE_TYPE));
 		IdentifyingAttributes identifyingAttributes = new IdentifyingAttributes(attributes);
-		return new Element(identifyingAttributes, new MutableAttributes().immutable(), parts);
+		return new Element(getRetestId(identifyingAttributes), identifyingAttributes, new MutableAttributes().immutable(), parts);
 	}
 }
