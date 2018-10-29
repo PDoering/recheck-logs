@@ -26,15 +26,7 @@ And even better: using the [retest GUI](https://retest.de/en/) (or the soon to c
 
 ## Usage
 
-Download recheck-logs [directly](https://github.com/retest/recheck-logs/releases/) or add it as a Maven dependency in your POM:
-
-```
-<dependency>
-	<groupId>de.retest</groupId>
-	<artifactId>recheck-logs</artifactId>
-	<version>0.1.0</version>
-</dependency>
-```
+Download recheck-logs [latest-release](https://github.com/retest/recheck-logs/releases/).
 
 ### Prerequisites
 
