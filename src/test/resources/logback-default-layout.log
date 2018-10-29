@@ -49,7 +49,7 @@
 	at de.retest.internet.ReTestConnection.a(SourceFile:47) ~[retest.jar:2.3.0]
 	at de.retest.internet.ReTestConnection.a(SourceFile:22) ~[retest.jar:2.3.0]
 	at de.retest.gui.helper.ReTestErrorHandler$1.run(SourceFile:38) [retest.jar:2.3.0]
-2018-08-13 21:51:21 INFO [AWT-EventQueue-0] de.retest.elementcollection.IgnoredComponents - No file '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/ignored.components' with ignored components found, be aware we are looking relative to the work directory.
+2018-08-13 21:51:21 INFO [AWT-EventQueue-0] de.retest.elementcollection.IgnoredComponents - No file '/Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/recheck.ignore' with ignored components found, be aware we are looking relative to the work directory.
  2018-08-13 21:51:21 INFO [AWT-EventQueue-0] de.retest.remote.ControllerReceiver - Starting AgentToController service.
  2018-08-13 21:51:21 INFO [AWT-EventQueue-0] de.retest.remote.RemoteUtil - Serving service stub at port: 45678
  2018-08-13 21:51:22 INFO [Thread-2] de.retest.util.FileUtil - Creating actions-folder: /Users/roessler/Desktop/retest/retest-demo-2.3.0/retest-workspace/recorded.
