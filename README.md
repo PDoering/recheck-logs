@@ -26,7 +26,7 @@ And even better: using the [retest GUI](https://retest.de/en/) (or the soon to c
 
 ## Usage
 
-Download recheck-logs [latest-release](https://github.com/retest/recheck-logs/releases/).
+Download recheck-logs [latest release](https://github.com/retest/recheck-logs/releases/).
 
 ### Prerequisites
 
