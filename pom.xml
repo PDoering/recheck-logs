@@ -76,7 +76,7 @@
 		<dependency>
 			<groupId>de.retest</groupId>
 			<artifactId>recheck</artifactId>
-			<version>0.21.0</version>
+			<version>1.0.0</version>
 		</dependency>
 
 		<dependency>
@@ -113,34 +113,6 @@
 			<artifactId>logback-classic</artifactId>
 			<version>1.0.9</version>
 			<scope>test</scope>
-		</dependency>
-
-		<!-- Why has that to be declared manually -->
-		<dependency>
-			<groupId>com.esotericsoftware</groupId>
-			<artifactId>kryo</artifactId>
-			<version>4.0.2</version>
-		</dependency>
-		<dependency>
-			<groupId>de.javakaffee</groupId>
-			<artifactId>kryo-serializers</artifactId>
-			<version>0.42</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-exec</artifactId>
-			<version>1.3</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.6</version>
-		</dependency>
-		<dependency>
-			<groupId>net.jpountz.lz4</groupId>
-			<artifactId>lz4</artifactId>
-			<version>1.3.0</version>
 		</dependency>
 	</dependencies>
 
