@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="3.0.0" dataType="de.retest.ui.descriptors.SutState" dataTypeVersion="2">
+<reTestXmlDataContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" reTestVersion="${pom.parent.version}" dataType="de.retest.recheck.ui.descriptors.SutState" dataTypeVersion="3">
 	<data xsi:type="sutState">
 		<descriptors retestId="logfile" screenId="0" screen="" title="example.log">
 			<identifyingAttributes>
 				<attributes>
 					<attribute key="fileName" xsi:type="stringAttribute">example.log</attribute>
-					<attribute key="path" xsi:type="pathAttribute">log-file</attribute>
+					<attribute key="path" xsi:type="pathAttribute">log-file[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">0</attribute>
 					<attribute key="type" xsi:type="stringAttribute">log-file</attribute>
 				</attributes>
 			</identifyingAttributes>
 			<attributes/>
-			<containedComponents retestId="line">
+			<containedElements retestId="line">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[1]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[1]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[1]/dateTime[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[1]/dateTime[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -36,11 +36,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[1]/level[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[1]/level[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -53,11 +53,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[1]/thread[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[1]/thread[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -70,11 +70,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[1]/logger[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[1]/logger[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -87,11 +87,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[1]/message[1]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[1]/message[1]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -104,21 +104,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-f884b">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[2]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[2]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-f6855">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[2]/dateTime[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[2]/dateTime[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -131,11 +131,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-f4416">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[2]/level[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[2]/level[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -148,11 +148,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-52157">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[2]/thread[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[2]/thread[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -165,11 +165,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-de393">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[2]/logger[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[2]/logger[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -182,11 +182,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-f4fd2">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[2]/message[2]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[2]/message[2]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">2</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -199,21 +199,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-5f89d">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[3]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[3]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-aab67">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[3]/dateTime[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[3]/dateTime[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -226,11 +226,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-ba3ec">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[3]/level[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[3]/level[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -243,11 +243,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-ec620">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[3]/thread[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[3]/thread[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -260,11 +260,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-2f9e7">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[3]/logger[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[3]/logger[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -277,11 +277,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-93eec">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[3]/message[3]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[3]/message[3]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">3</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -294,21 +294,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-7e9e0">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[4]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[4]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-fc2af">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[4]/dateTime[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[4]/dateTime[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -321,11 +321,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-e3c29">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[4]/level[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[4]/level[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -338,11 +338,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-d59b7">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[4]/thread[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[4]/thread[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -355,11 +355,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-0e9f0">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[4]/logger[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[4]/logger[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -372,11 +372,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-2dff1">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[4]/message[4]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[4]/message[4]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">4</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -389,21 +389,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-9dba2">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[5]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[5]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-f2264">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[5]/dateTime[5]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[5]/dateTime[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -416,11 +416,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-c9569">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[5]/level[5]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[5]/level[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -433,11 +433,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-9acb5">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[5]/thread[5]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[5]/thread[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -450,11 +450,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-e05f4">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[5]/logger[5]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[5]/logger[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -467,11 +467,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-42b2c">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[5]/message[5]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[5]/message[5]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">5</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -484,21 +484,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-2bd9d">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[6]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[6]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-fe325">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[6]/dateTime[6]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[6]/dateTime[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -511,11 +511,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-1127a">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[6]/level[6]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[6]/level[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -528,11 +528,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-c82a6">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[6]/thread[6]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[6]/thread[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -545,11 +545,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-119d5">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[6]/logger[6]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[6]/logger[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -562,11 +562,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-f8f15">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[6]/message[6]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[6]/message[6]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">6</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -579,21 +579,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-0b41d">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[7]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[7]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-6204a">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[7]/dateTime[7]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[7]/dateTime[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -606,11 +606,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-324a6">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[7]/level[7]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[7]/level[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -623,11 +623,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-10a33">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[7]/thread[7]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[7]/thread[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -640,11 +640,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-62f6e">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[7]/logger[7]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[7]/logger[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -657,11 +657,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-ecd98">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[7]/message[7]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[7]/message[7]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">7</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -674,21 +674,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-d5b37">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[8]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[8]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-59e91">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[8]/dateTime[8]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[8]/dateTime[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -701,11 +701,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-8f306">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[8]/level[8]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[8]/level[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -718,11 +718,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-9bde4">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[8]/thread[8]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[8]/thread[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -735,11 +735,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-e55de">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[8]/logger[8]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[8]/logger[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -752,11 +752,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-2c928">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[8]/message[8]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[8]/message[8]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">8</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -769,21 +769,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-c71c5">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[9]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[9]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-6df0d">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[9]/dateTime[9]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[9]/dateTime[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -796,11 +796,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-dbb87">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[9]/level[9]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[9]/level[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -813,11 +813,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-18d6f">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[9]/thread[9]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[9]/thread[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -830,11 +830,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-8d7ea">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[9]/logger[9]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[9]/logger[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -847,11 +847,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-cd5ca">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[9]/message[9]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[9]/message[9]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">9</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -864,21 +864,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-3cb3d">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[10]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[10]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-a4046">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[10]/dateTime[10]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[10]/dateTime[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -891,11 +891,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-3690f">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[10]/level[10]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[10]/level[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -908,11 +908,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-d1133">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[10]/thread[10]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[10]/thread[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -925,11 +925,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-6c26f">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[10]/logger[10]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[10]/logger[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -942,11 +942,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-3eac3">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[10]/message[10]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[10]/message[10]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">10</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -959,21 +959,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-d931a">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[11]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[11]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-c3759">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[11]/dateTime[11]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[11]/dateTime[11]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -986,11 +986,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-a1bb4">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[11]/level[11]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[11]/level[11]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1003,11 +1003,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-6619c">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[11]/thread[11]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[11]/thread[11]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1020,11 +1020,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-c5827">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[11]/logger[11]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[11]/logger[11]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1037,11 +1037,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-4d1b2">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[11]/message[11]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[11]/message[11]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">11</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -1054,21 +1054,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-22ba4">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[12]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[12]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">12</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-495eb">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[12]/dateTime[12]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[12]/dateTime[12]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">12</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -1081,11 +1081,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-eae9d">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[12]/level[12]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[12]/level[12]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">12</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1098,11 +1098,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-26947">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[12]/thread[12]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[12]/thread[12]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">12</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1115,11 +1115,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-f021c">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[12]/logger[12]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[12]/logger[12]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">12</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1132,11 +1132,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-6f3fe">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[12]/message[12]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[12]/message[12]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">12</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -1149,21 +1149,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-ef262">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[13]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[13]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">13</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-ccd52">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[13]/dateTime[13]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[13]/dateTime[13]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">13</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -1176,11 +1176,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-6ce1d">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[13]/level[13]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[13]/level[13]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">13</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1193,11 +1193,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-5e604">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[13]/thread[13]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[13]/thread[13]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">13</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1210,11 +1210,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-6d689">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[13]/logger[13]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[13]/logger[13]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">13</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1227,11 +1227,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-2d05a">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[13]/message[13]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[13]/message[13]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">13</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -1244,21 +1244,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-f7bd5">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[14]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[14]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">14</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-2f5e5">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[14]/dateTime[14]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[14]/dateTime[14]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">14</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -1271,11 +1271,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-7f4a0">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[14]/level[14]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[14]/level[14]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">14</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1288,11 +1288,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-3d9d2">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[14]/thread[14]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[14]/thread[14]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">14</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1305,11 +1305,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-095d1">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[14]/logger[14]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[14]/logger[14]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">14</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1322,11 +1322,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-d9b63">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[14]/message[14]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[14]/message[14]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">14</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -1339,21 +1339,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-2cd2e">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[15]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[15]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">15</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-49bd9">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[15]/dateTime[15]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[15]/dateTime[15]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">15</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -1366,11 +1366,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-61b17">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[15]/level[15]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[15]/level[15]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">15</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1383,11 +1383,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-437e5">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[15]/thread[15]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[15]/thread[15]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">15</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1400,11 +1400,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-2ea47">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[15]/logger[15]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[15]/logger[15]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">15</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1417,11 +1417,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-720e2">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[15]/message[15]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[15]/message[15]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">15</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -1434,21 +1434,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-6426a">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[16]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[16]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">16</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-18b49">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[16]/dateTime[16]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[16]/dateTime[16]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">16</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -1461,11 +1461,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-c9159">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[16]/level[16]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[16]/level[16]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">16</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1478,11 +1478,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-e58aa">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[16]/thread[16]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[16]/thread[16]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">16</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1495,11 +1495,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-e9d6f">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[16]/logger[16]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[16]/logger[16]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">16</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1512,11 +1512,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-4d41d">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[16]/message[16]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[16]/message[16]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">16</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -1529,21 +1529,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-3a105">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[17]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[17]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">17</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-b2593">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[17]/dateTime[17]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[17]/dateTime[17]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">17</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -1556,11 +1556,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-f784d">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[17]/level[17]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[17]/level[17]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">17</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1573,11 +1573,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-98fd3">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[17]/thread[17]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[17]/thread[17]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">17</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1590,11 +1590,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-499ae">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[17]/logger[17]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[17]/logger[17]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">17</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1607,11 +1607,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-4b736">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[17]/message[17]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[17]/message[17]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">17</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -1624,21 +1624,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-87396">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[18]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[18]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">18</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-bfa23">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[18]/dateTime[18]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[18]/dateTime[18]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">18</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -1651,11 +1651,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-f7c90">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[18]/level[18]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[18]/level[18]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">18</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1668,11 +1668,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-30aa6">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[18]/thread[18]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[18]/thread[18]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">18</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1685,11 +1685,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-a26ff">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[18]/logger[18]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[18]/logger[18]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">18</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1702,11 +1702,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-634db">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[18]/message[18]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[18]/message[18]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">18</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -1719,21 +1719,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-0dbe4">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[19]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[19]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">19</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-39c40">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[19]/dateTime[19]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[19]/dateTime[19]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">19</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -1746,11 +1746,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-439de">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[19]/level[19]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[19]/level[19]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">19</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1763,11 +1763,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-37f99">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[19]/thread[19]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[19]/thread[19]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">19</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1780,11 +1780,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-9b38e">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[19]/logger[19]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[19]/logger[19]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">19</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1797,11 +1797,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-1baf0">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[19]/message[19]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[19]/message[19]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">19</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -1814,21 +1814,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-f5557">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[20]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[20]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">20</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-ab62a">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[20]/dateTime[20]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[20]/dateTime[20]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">20</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -1841,11 +1841,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-13e44">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[20]/level[20]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[20]/level[20]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">20</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1858,11 +1858,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-2f06e">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[20]/thread[20]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[20]/thread[20]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">20</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1875,11 +1875,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-40db3">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[20]/logger[20]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[20]/logger[20]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">20</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1892,11 +1892,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-2c79d">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[20]/message[20]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[20]/message[20]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">20</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -1909,21 +1909,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-34864">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[21]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[21]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">21</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-158cd">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[21]/dateTime[21]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[21]/dateTime[21]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">21</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -1936,11 +1936,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-ec05e">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[21]/level[21]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[21]/level[21]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">21</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -1953,11 +1953,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-c807f">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[21]/thread[21]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[21]/thread[21]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">21</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -1970,11 +1970,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-8f186">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[21]/logger[21]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[21]/logger[21]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">21</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -1987,11 +1987,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-7828e">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[21]/message[21]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[21]/message[21]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">21</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -2004,21 +2004,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-7704b">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[55]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[55]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">55</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-e4167">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[55]/dateTime[55]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[55]/dateTime[55]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">55</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -2031,11 +2031,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-bf737">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[55]/level[55]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[55]/level[55]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">55</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -2048,11 +2048,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-bc828">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[55]/thread[55]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[55]/thread[55]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">55</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -2065,11 +2065,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-e194c">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[55]/logger[55]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[55]/logger[55]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">55</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -2082,11 +2082,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-12db4">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[55]/message[55]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[55]/message[55]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">55</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -2099,21 +2099,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-54780">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[89]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[89]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">89</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-f59f5">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[89]/dateTime[89]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[89]/dateTime[89]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">89</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -2126,11 +2126,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-807d0">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[89]/level[89]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[89]/level[89]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">89</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -2143,11 +2143,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-a3e1a">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[89]/thread[89]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[89]/thread[89]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">89</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -2160,11 +2160,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-aad44">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[89]/logger[89]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[89]/logger[89]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">89</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -2177,11 +2177,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-cac82">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[89]/message[89]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[89]/message[89]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">89</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -2194,21 +2194,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-8e8ef">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[90]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[90]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">90</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-a5b66">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[90]/dateTime[90]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[90]/dateTime[90]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">90</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -2221,11 +2221,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-4e439">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[90]/level[90]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[90]/level[90]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">90</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -2238,11 +2238,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-c5d33">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[90]/thread[90]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[90]/thread[90]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">90</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -2255,11 +2255,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-2235f">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[90]/logger[90]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[90]/logger[90]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">90</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -2272,11 +2272,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-59d3a">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[90]/message[90]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[90]/message[90]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">90</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -2289,21 +2289,21 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
-			<containedComponents retestId="line">
+				</containedElements>
+			</containedElements>
+			<containedElements retestId="line-6e3c5">
 				<identifyingAttributes>
 					<attributes>
-						<attribute key="path" xsi:type="pathAttribute">log-file/line[92]</attribute>
+						<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[92]</attribute>
 						<attribute key="suffix" xsi:type="suffixAttribute">92</attribute>
 						<attribute key="type" xsi:type="stringAttribute">line</attribute>
 					</attributes>
 				</identifyingAttributes>
 				<attributes/>
-				<containedComponents retestId="datetime">
+				<containedElements retestId="datetime-0fd78">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[92]/dateTime[92]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[92]/dateTime[92]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">92</attribute>
 							<attribute key="type" xsi:type="stringAttribute">dateTime</attribute>
 						</attributes>
@@ -2316,11 +2316,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="level">
+				</containedElements>
+				<containedElements retestId="level-6d8ba">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[92]/level[92]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[92]/level[92]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">92</attribute>
 							<attribute key="type" xsi:type="stringAttribute">level</attribute>
 						</attributes>
@@ -2333,11 +2333,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="thread">
+				</containedElements>
+				<containedElements retestId="thread-87d76">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[92]/thread[92]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[92]/thread[92]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">92</attribute>
 							<attribute key="type" xsi:type="stringAttribute">thread</attribute>
 						</attributes>
@@ -2350,11 +2350,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="logger">
+				</containedElements>
+				<containedElements retestId="logger-e663f">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[92]/logger[92]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[92]/logger[92]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">92</attribute>
 							<attribute key="type" xsi:type="stringAttribute">logger</attribute>
 						</attributes>
@@ -2367,11 +2367,11 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-				<containedComponents retestId="message">
+				</containedElements>
+				<containedElements retestId="message-776f3">
 					<identifyingAttributes>
 						<attributes>
-							<attribute key="path" xsi:type="pathAttribute">log-file/line[92]/message[92]</attribute>
+							<attribute key="path" xsi:type="pathAttribute">log-file[1]/line[92]/message[92]</attribute>
 							<attribute key="suffix" xsi:type="suffixAttribute">92</attribute>
 							<attribute key="type" xsi:type="stringAttribute">message</attribute>
 						</attributes>
@@ -2384,8 +2384,8 @@
 							</entry>
 						</attributes>
 					</attributes>
-				</containedComponents>
-			</containedComponents>
+				</containedElements>
+			</containedElements>
 		</descriptors>
 	</data>
 </reTestXmlDataContainer>

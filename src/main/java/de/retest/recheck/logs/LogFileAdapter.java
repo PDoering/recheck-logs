@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.Set;
 
 import de.retest.recheck.RecheckAdapter;
-import de.retest.ui.DefaultValueFinder;
-import de.retest.ui.descriptors.RootElement;
+import de.retest.recheck.ui.DefaultValueFinder;
+import de.retest.recheck.ui.descriptors.RootElement;
 
 public class LogFileAdapter implements RecheckAdapter {
 
@@ -25,7 +25,7 @@ public class LogFileAdapter implements RecheckAdapter {
 
 	@Override
 	public DefaultValueFinder getDefaultValueFinder() {
-		return (comp, attributesKey) -> null;
+		return (comp, attributesKey, attributeValue) -> false;
 	}
 
 }

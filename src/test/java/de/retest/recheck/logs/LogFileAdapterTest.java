@@ -6,7 +6,8 @@ import java.io.File;
 
 import org.junit.Test;
 
-import de.retest.ui.descriptors.RootElement;
+import de.retest.recheck.ui.descriptors.RootElement;
+
 
 public class LogFileAdapterTest {
 
